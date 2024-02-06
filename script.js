@@ -15,7 +15,7 @@ let parrafoResultado = document.getElementById('textoResultado'); // parrafo don
 
 // evento de escucha para encriptar
 btnEncrip.addEventListener('click', function(){
-    let text = textArea.value;
+    let text = textArea.value.toLowerCase();
     // objeto para mapear los char
     let replacements = {
         'e': 'enter',
@@ -33,7 +33,7 @@ btnEncrip.addEventListener('click', function(){
 
 // evento de escuchar para desencriptar
 btnDecrypt.addEventListener('click', function(){
-    let text = textArea.value;
+    let text = textArea.value.toLowerCase();
     // objeto para mapear los char
     let replacements = {
         'enter': 'e',
